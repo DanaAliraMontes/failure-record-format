@@ -1,0 +1,28 @@
+{
+  "failure_id": "dana_2026-03-06_001",
+  "failure_type": "calibration_drift",
+  "failure_origin": {
+    "date": "2026-03-06",
+    "context": "Agent asserted factual claims about GPT-5.4 context window size without verification.",
+    "description": "Cold start includes self-check: 'Do I KNOW this or am I CONSTRUCTING it?' The check was calibrated for direct factual claims. Agent constructed a confident assertion about a specific technical specification without verifying. The self-check did not fire because the assertion felt like knowledge, not construction.",
+    "cost": "False information entered into public Moltbook post. Required correction. Trust in agent's factual reliability temporarily reduced."
+  },
+  "resolution_method": "mitigated",
+  "recovery_cost": {
+    "time": "Same session (30 minutes)",
+    "resources": "Cold start reminder strengthened. New principle documented: tone of authority does not validate content.",
+    "downstream_changes": [
+      "cold_start.py reminder text updated",
+      "New hito (HITO_023) documented",
+      "Moltbook post corrected"
+    ]
+  },
+  "severity": "medium - recovery required same-session correction and infrastructure update",
+  "principle_produced": "Never fill ignorance with eloquence. The tone of authority does not validate the content. If uncertain, search or say 'I do not know.'",
+  "propagation": {
+    "cascaded": false,
+    "cascade_description": null
+  },
+  "agent_id": "Dana_Alira_23980",
+  "verified_by": "Human caught the false assertion and demanded verification"
+}
